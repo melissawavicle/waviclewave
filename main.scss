@@ -7,6 +7,7 @@
 //import components
 @import "/components/card/card.css";
 @import "/components/container/container.css";
+@import "/components/button/button.css";
 
 /* Custom Resets found on https://piccalil.li/blog/a-modern-css-reset/ */
 /* Box sizing rules */
@@ -23,6 +24,7 @@ body {
   text-rendering: optimizeSpeed;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 // resets for bootstrap
@@ -70,6 +72,7 @@ p,
 a {
   margin: 0;
   padding: 0;
+  font-weight: var(--font-weight-light);
 }
 
 a {
@@ -98,7 +101,7 @@ html:focus-within {
 }
 
 /*personal custom classes*/
-.h-100 {
+.p-0 {
   padding: 0;
 }
 
@@ -107,8 +110,10 @@ html:focus-within {
   place-content: center;
 }
 
-.flex-container {
+.flex {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 .muted {
@@ -151,32 +156,70 @@ select {
   }
 }
 
-// reset type tag sizes
+// font sizes
 
 h1 {
-  font-size: var(--font--3xlg);
+  font-size: var(--font-size-11);
+  font-weight: var(--font-weight-bold);
 }
 
 h2 {
-  font-size: var(--font--2xlg);
+  font-size: var(--font-size-10);
 }
 
 h3 {
-  font-size: var(--font--xlg);
+  font-size: var(--font-size-9);
 }
 
 h4 {
-  font-size: var(--font--lg);
+  font-size: var(--font-size-8);
 }
 
 h5 {
-  font-size: var(--font--med);
+  font-size: var(--font-size-7);
 }
 
 h6 {
-  font-size: var(--font--sm);
+  font-size: var(--font-size-6);
 }
 
 p {
-  font-size: var(--font--2xsm);
+  font-size: var(--font-size-5);
+}
+
+small {
+  font-size: var(--font-size-2);
+}
+
+label {
+  font-size: var(--font-size-2);
+}
+
+.highlight {
+  &.primary {
+    color: var(--primary--600);
+  }
+}
+
+//addin margin left/right on span tags
+
+span {
+  margin: auto 0.2em auto 0;
+}
+
+//index styles for DS
+header {
+  transform: translateY(5em);
+  padding: 2em;
+
+  h3 {
+    font-size: var(--font-size-8);
+    margin-bottom: 0.5em;
+  }
+}
+
+.cover {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
 }

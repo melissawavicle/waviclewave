@@ -1,0 +1,30 @@
+button {
+  box-shadow: none;
+  border-radius: var(--border-radius-lg);
+  border: 1px solid transparent;
+  transition: opacity 0.4s ease;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+//sizes
+.btn-lg {
+  padding: 1em;
+  font-size: var(--font-size-6);
+}
+
+//types
+.btn-primary {
+  background-color: var(--primary--600);
+  border-color: var(--primary--600);
+  color: var(--white--50);
+}
+
+.btn-secondary {
+  border-color: var(--primary--600);
+  background-color: var(--white--50);
+  color: var(--primary--600);
+}
