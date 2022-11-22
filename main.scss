@@ -252,6 +252,14 @@ header {
   h2 {
     font-size: var(--font-size-6);
   }
+  &.home-header {
+    padding: 2em;
+    transform: translateY(6em);
+    margin-bottom: -3em;
+    h1 {
+      font-size: var(--font-size-10);
+    }
+  }
 }
 
 .chart,
