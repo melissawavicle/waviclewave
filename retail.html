@@ -194,8 +194,55 @@
           </div>
         </div>
         <header>
-          <h1>Hi, Alex!</h1>
-          <h2>Here are your insights for the day</h2>
+          <div class="top">
+            <div class="welcome">
+              <h1>Hi, Alex!</h1>
+              <h2>Here are your insights for the day</h2>
+            </div>
+            <div class="end">
+              <button type="button" class="btn-md btn-white">Tampa, FL</button>
+              <div class="btn-group">
+                <button type="button" class="btn-md btn-white selected">
+                  YTD</button
+                ><button type="button" class="btn-md btn-white">MTD</button
+                ><button type="button" class="btn-md btn-white">WTD</button
+                ><button type="button" class="btn-md btn-white">Day</button>
+              </div>
+              <div class="picker">
+                <button class="btn-white btn-md">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_3_5054)">
+                      <path
+                        d="M12 2.66669H3.99999C2.52724 2.66669 1.33333 3.86059 1.33333 5.33335V12C1.33333 13.4728 2.52724 14.6667 3.99999 14.6667H12C13.4728 14.6667 14.6667 13.4728 14.6667 12V5.33335C14.6667 3.86059 13.4728 2.66669 12 2.66669Z"
+                        stroke="#4363DA"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.33333 1.33334V4.00001M10.6667 1.33334V4.00001M1.33333 6.66668H14.6667"
+                        stroke="#4363DA"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_3_5054">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </header>
 
         <div class="row flex">
@@ -410,7 +457,11 @@
             </div>
           </div>
         </div>
+        <div class="row flex">
+          <!--chart 2-->
+        </div>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
 </html>

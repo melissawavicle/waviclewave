@@ -16,6 +16,14 @@ button {
   font-size: var(--font-size-6);
 }
 
+.btn-md {
+  padding: 0.675em;
+}
+
+.btn-sm {
+  padding: 0.5em;
+}
+
 //types
 .btn-primary {
   background-color: var(--primary--600);
@@ -37,6 +45,19 @@ button {
   border-color: var(--black--200);
 }
 
-.btn-sm {
-  padding: 0.5em;
+// btn group
+
+.btn-group {
+  display: flex;
+  margin: 0 1em;
+  flex-direction: row-reverse;
+
+  button {
+    margin: 0 -0.15em;
+    &.selected {
+      background-color: var(--primary--600);
+      border-color: var(--primary--600);
+      color: var(--white--50);
+    }
+  }
 }
