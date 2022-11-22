@@ -96,9 +96,9 @@
   /* Text-size styles */
   /* base size: helvetica--neue--90px--regular (90px) */
   --helvetica--neue--90px: calc(3.2vw + 2em); /*9rem*/
-  --helvetica--neue--64px: calc(3vw + 1.8rem); /*6.4rem*/
+  --helvetica--neue--64px: calc(3vw + 3rem); /*6.4rem*/
   --helvetica--neue--44px: calc(2.5vw + 1.4rem);
-  --helvetica--neue--32px: calc(2vw + 1.2rem);
+  --helvetica--neue--32px: calc(2vw + 2rem);
   --helvetica--neue--24px: calc(1.5vw + 0.875rem);
   --helvetica--neue--18px: 1.8rem;
   --helvetica--neue--16px: 1.6rem;
