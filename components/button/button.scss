@@ -1,6 +1,6 @@
 button {
   box-shadow: none;
-  border-radius: var(--border-radius-lg);
+  border-radius: var(--border-radius-sm);
   border: 1px solid transparent;
   transition: opacity 0.4s ease;
 
@@ -21,10 +21,22 @@ button {
   background-color: var(--primary--600);
   border-color: var(--primary--600);
   color: var(--white--50);
+  a {
+    color: var(--white--50);
+  }
 }
 
 .btn-secondary {
   border-color: var(--primary--600);
   background-color: var(--white--50);
   color: var(--primary--600);
+}
+
+.btn-white {
+  background-color: var(--white--50);
+  border-color: var(--black--200);
+}
+
+.btn-sm {
+  padding: 0.5em;
 }

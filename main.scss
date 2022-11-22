@@ -8,7 +8,9 @@
 @import "components/card/card.css";
 @import "components/container/container.css";
 @import "components/button/button.css";
-
+@import "components/nav/nav.css";
+@import "components/avatar/avatar.css";
+@import "components/input/input.css";
 /* Custom Resets found on https://piccalil.li/blog/a-modern-css-reset/ */
 /* Box sizing rules */
 
@@ -58,7 +60,7 @@ svg {
 * {
   margin: 0;
   padding: 0;
-  color: var(--black--700);
+  color: var(--black--600);
 }
 
 //remove default styling from H tags
@@ -100,14 +102,18 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+span {
+  display: inline-block;
+}
+
 /*personal custom classes*/
 .p-0 {
   padding: 0;
 }
 
-.grid-center {
+.grid {
   display: grid;
-  place-content: center;
+  gap: 1em;
 }
 
 .flex {
@@ -159,28 +165,27 @@ select {
 // font sizes
 
 h1 {
-  font-size: var(--font-size-11);
-  font-weight: var(--font-weight-bold);
-}
-
-h2 {
-  font-size: var(--font-size-10);
-}
-
-h3 {
-  font-size: var(--font-size-9);
-}
-
-h4 {
   font-size: var(--font-size-8);
 }
 
-h5 {
+h2 {
   font-size: var(--font-size-7);
 }
 
-h6 {
+h3 {
   font-size: var(--font-size-6);
+}
+
+h4 {
+  font-size: var(--font-size-5);
+}
+
+h5 {
+  font-size: var(--font-size-4);
+}
+
+h6 {
+  font-size: var(--font-size-3);
 }
 
 p {
@@ -188,7 +193,7 @@ p {
 }
 
 small {
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-1);
 }
 
 label {
@@ -209,9 +214,7 @@ span {
 
 //index styles for DS
 header {
-  transform: translateY(5em);
-  padding: 2em;
-
+  padding: 2em 0;
   h3 {
     font-size: var(--font-size-8);
     margin-bottom: 0.5em;
@@ -222,4 +225,37 @@ header {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
+}
+
+// dashboard styles
+
+.tile {
+  margin: 1em;
+  height: 240px;
+  overflow: hidden;
+  width: 400px;
+  border: 1px solid var(--black--50);
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  box-shadow: 2px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  &:hover {
+    cursor: pointer;
+    box-shadow: none;
+  }
+}
+
+header {
+  h1 {
+    font-size: var(--font-size-7);
+    font-weight: var(--font-weight-normal);
+  }
+  h2 {
+    font-size: var(--font-size-6);
+  }
+}
+
+.chart,
+canvas {
+  width: 100% !important;
+  height: auto !important;
 }
