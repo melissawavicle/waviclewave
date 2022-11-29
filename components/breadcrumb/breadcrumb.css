@@ -1,0 +1,1 @@
+.breadcrumb{width:auto;margin:1em}.breadcrumb a{font-size:var(--font-size-4)}.breadcrumb a:not(.current){font-weight:var(--font-weight-normal)}.breadcrumb a:not(.current)::after{content:"/";position:relative;right:0;color:inherit;margin-left:.5em}.breadcrumb a.current{cursor:auto}

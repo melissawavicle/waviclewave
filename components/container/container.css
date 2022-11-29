@@ -1,1 +1,1 @@
-.container-fluid{padding:1em}.container{padding:1em;margin-left:100px;display:grid;gap:.675em}
+.container,.container-fluid{padding:1em;transition:all .4s ease}.container{display:grid;gap:.675em}.container.w-left-nav{margin-left:100px}@media screen and (max-width: 800px){.container{margin-left:0}}

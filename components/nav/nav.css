@@ -1,1 +1,1 @@
-nav{width:90px;background-color:var(--primary--600);height:100vh;position:fixed;left:0;top:0;bottom:0;display:grid;padding:1em;justify-content:center}nav ul li{margin:3em auto;text-align:center}nav ul li:first-child{margin-top:0}
+nav{transition:all .4s ease;width:90px;background-color:var(--primary--600);height:100vh;position:fixed;left:0;top:0;bottom:0;display:grid;padding:1em;justify-content:center;height:100%}nav ul li{margin:3em auto;text-align:center}nav ul li:first-child{margin-top:0}@media screen and (max-width: 800px){nav{transform:translateX(-100px)}}

@@ -14,7 +14,9 @@
   <body>
     <main>
       <nav>
-        <div class="avatar"><img src="./assets/img/avatar.jpg" /></div>
+        <div class="avatar">
+          <a href="/index.html"><img src="./assets/img/avatar.jpg" /></a>
+        </div>
         <ul>
           <li>
             <svg
@@ -137,7 +139,7 @@
           </li>
         </ul>
       </nav>
-      <div class="container">
+      <div class="container w-left-nav">
         <div class="top">
           <div class="text-input">
             <span class="prefix-icon">
@@ -380,7 +382,7 @@
           </div>
         </div>
         <div class="row flex">
-          <div class="chart line">
+          <div class="chart half mobile-100 line">
             <div class="card">
               <div class="top">
                 <h1 class="card-header">Sales Trend<span>Today</span></h1>
@@ -391,15 +393,15 @@
                 </div>
               </div>
               <div>
-                <canvas id="myChart"></canvas>
+                <canvas class="chart" id="lineChart"></canvas>
               </div>
 
               <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
               <script>
-                const ctx = document.getElementById("myChart");
+                const ctx1 = document.getElementById("lineChart");
 
-                new Chart(ctx, {
+                new Chart(ctx1, {
                   type: "line",
                   data: {
                     datasets: [
