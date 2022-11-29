@@ -246,7 +246,6 @@
 
             <script>
               const ctx1 = document.getElementById("lineChart");
-
               new Chart(ctx1, {
                 type: "line",
                 data: {
@@ -273,6 +272,83 @@
                         "5p": 34,
                         "9p": 30,
                         "12a": 60,
+                      },
+                      borderWidth: 1,
+                      borderColor: "#A7E7CE",
+                      backgroundColor: "#A7E7CE",
+                    },
+                  ],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      suggestedMin: 5,
+                      suggestedMax: 70,
+                    },
+                  },
+                  plugins: {
+                    legend: {
+                      display: true,
+
+                      labels: {
+                        color: "#000",
+                        usePointStyle: true,
+                        pointStyle: "circle",
+                      },
+                    },
+                  },
+                },
+              });
+            </script>
+          </div>
+        </div>
+
+        <!--second chart-->
+        <div class="chart half mobile-100 line">
+          <div class="card">
+            <div class="top">
+              <h1 class="card-header">Sales Trend<span>Today</span></h1>
+              <div class="end">
+                <button type="button" class="btn-sm btn-white">
+                  Transactions
+                </button>
+              </div>
+            </div>
+            <div>
+              <canvas class="chart" id="barChart"></canvas>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+            <script>
+              const ctx2 = document.getElementById("barChart");
+              new Chart(ctx2, {
+                type: "bar",
+                data: {
+                  datasets: [{
+                      label: "Last Year Today",
+                   
+                       data: {
+                       "Curbside Pickup": 10,
+                        "Kiosk": 12,
+                        "Mobile Order": 30,
+                        "Drive Through": 15,
+                        "Counter": 34,
+                        "Delivery": 45,
+                      },
+                      borderWidth: 1,
+                      borderColor: "#4363DA",
+                      backgroundColor: "#4363DA",
+                    },
+                    {
+                      label: "Today",
+                       data: {
+                        "Curbside Pickup": 17,
+                        "Kiosk": 20,
+                        "Mobile Order": 40,
+                        "Drive Through": 20,
+                        "Counter": 40,
+                        "Delivery": 65,
                       },
                       borderWidth: 1,
                       borderColor: "#A7E7CE",
@@ -393,6 +469,8 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  
+  <!--chart.js-->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <!--custom js-->
