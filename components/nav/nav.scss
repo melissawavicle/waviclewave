@@ -14,10 +14,20 @@ nav {
 
   ul {
     li {
-      margin: 3em auto;
+      padding: 0.5em 1em;
+      transition: all 0.4s ease;
+      border-radius: 6px;
+      margin: 2em auto;
       text-align: center;
       &:first-child {
         margin-top: 0;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: var(--transparent--05);
+      }
+      &.selected {
+        background-color: var(--transparent--20);
       }
     }
   }

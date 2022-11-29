@@ -2,9 +2,9 @@
 
 :root {
   /* Color styles */
-  --transparent--05: hsla(0, 0%, 100%, 1);
-  --transparent--10: hsla(0, 0%, 100%, 0.8999999761581421);
-  --transparent--20: hsla(0, 0%, 100%, 0.800000011920929);
+  --transparent--05: hsla(0, 0%, 100%, 0.0599999761581421);
+  --transparent--10: hsla(0, 0%, 100%, 0.1099999761581421);
+  --transparent--20: hsla(0, 0%, 100%, 0.200000011920929);
   --transparent--30: hsla(0, 0%, 86.3%, 0.30000001192092896);
   --transparent--40: hsla(0, 0%, 92.2%, 0.4000000059604645);
   --transparent--50: hsla(0, 0%, 97.6%, 0.5);

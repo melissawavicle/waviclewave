@@ -1,7 +1,7 @@
 .datepicker {
   input {
     &::after {
-      content: "/";
+      content: url;
     }
   }
 }
