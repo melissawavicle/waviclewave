@@ -28,6 +28,9 @@ body {
   font-size: 1.6rem;
   overflow-x: hidden;
 }
+main {
+  height: 100%;
+}
 
 // resets for bootstrap
 
@@ -261,8 +264,8 @@ header {
   }
 }
 
-.chart,
-canvas {
-  width: 100% !important;
+#myChart {
+  flex-grow: 1;
+  max-width: 500px !important;
   height: auto !important;
 }
