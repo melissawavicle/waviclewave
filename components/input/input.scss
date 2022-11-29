@@ -37,3 +37,9 @@
     padding-left: 2em;
   }
 }
+
+input[type="text"] {
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid var(--black--200);
+}
