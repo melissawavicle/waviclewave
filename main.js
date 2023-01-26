@@ -1,3 +1,4 @@
+// 3rd party daterange picker
 $(function () {
   $('input[name="daterange"]').daterangepicker(
     {
@@ -13,3 +14,5 @@ $(function () {
     }
   );
 });
+
+// index page transition

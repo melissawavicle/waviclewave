@@ -14,6 +14,8 @@
 @import "components/breadcrumb/breadcrumb.css";
 @import "components/select/select.css";
 @import "components/datepicker/datepicker.css";
+@import "components/accordion/accordion.css";
+
 /* Custom Resets found on https://piccalil.li/blog/a-modern-css-reset/ */
 /* Box sizing rules */
 
@@ -167,27 +169,27 @@ select {
 // font sizes
 
 h1 {
-  font-size: var(--font-size-7);
+  font-size: var(--font-size-12);
 }
 
 h2 {
-  font-size: var(--font-size-7);
+  font-size: var(--font-size-11);
 }
 
 h3 {
-  font-size: var(--font-size-6);
+  font-size: var(--font-size-10);
 }
 
 h4 {
-  font-size: var(--font-size-5);
+  font-size: var(--font-size-9);
 }
 
 h5 {
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-8);
 }
 
 h6 {
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-7);
 }
 
 p {
@@ -195,11 +197,11 @@ p {
 }
 
 small {
-  font-size: var(--font-size-1);
+  font-size: var(--font-size-2);
 }
 
 label {
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-3);
 }
 
 .highlight {
@@ -243,18 +245,16 @@ span {
 header {
   transform: translateY(3em);
   padding: 4em !important;
+  .logo {
+    width: 100px;
+    margin-bottom: 1em;
+  }
 
   h1 {
     font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-9);
-  }
-
-  h2 {
-    font-size: var(--font-size-6);
   }
 
   h3 {
-    font-size: var(--font-size-7);
     margin-bottom: 0.5em;
   }
 }
@@ -283,6 +283,15 @@ header {
   }
 }
 
+// styles for component pages
+
+main {
+  &.component-page {
+    display: flex;
+    justify-content: start;
+  }
+}
+
 // mobile queries
 
 @media screen and (max-width: 1024px) {
@@ -296,15 +305,6 @@ header {
     header {
       padding: 1em;
       transform: translate(0);
-
-      h1 {
-        font-size: var(--font-size-10);
-      }
-
-      h3 {
-        font-size: var(--font-size-9);
-      }
-
       .cta {
         margin-top: 2em;
 

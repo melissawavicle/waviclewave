@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image" href="assets/wavicle-logo.svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="main.css" />
 
-    <title>Wave | Components</title>
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image" href="assets/wavicle-logo.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="main.css" />
 
-  <body>
-    <main>
-      <nav class="open default">
-        <div class="avatar mb-5">
-          <a href="index.html"><img src="./assets/wavicle-logo-white.svg" /></a>
-        </div>
-        <div class="anchor">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="18"
-            height="18"
-            viewBox="0 0 18 18"
-            fill="none"
-          >
-            <path
-              d="M10.1224 14.692L9.37914 15.4042C9.06445 15.7058 8.55557 15.7058 8.24423 15.4042L1.73602 9.17041C1.42133 8.86883 1.42133 8.38116 1.73602 8.08278L8.24423 1.84576C8.55892 1.54417 9.06779 1.54417 9.37914 1.84576L10.1224 2.55801C10.4404 2.8628 10.4337 3.3601 10.109 3.65847L6.07482 7.34166H15.6965C16.1418 7.34166 16.5 7.68495 16.5 8.11166V9.13833C16.5 9.56504 16.1418 9.90833 15.6965 9.90833H6.07482L10.109 13.5915C10.4371 13.8899 10.4438 14.3872 10.1224 14.692Z"
-              fill="#CDD5F6"
-            />
-          </svg>
-        </div>
-        <div class="header">COMPONENTS</div>
-        <ul>
-          <li class="selected">Accordion</li>
-          <li>Button</li>
-          <li>Cards</li>
-          <li>Input</li>
-          <li>List Item</li>
-          <li>Modal</li>
-          <li>Nav</li>
-        </ul>
-      </nav>
-      <div class="container w-left-nav">
-        <div class="breadcrumb">
-          <a href="index.html">Home</a>
-          <a class="current" href="">Components</a>
-        </div>
+  <title>Wave | Components</title>
+</head>
+
+<body>
+  <main class="component-page">
+    <nav class="open default">
+      <div class="avatar mb-5">
+        <a href="index.html"><img src="./assets/wavicle-logo-white.svg" /></a>
       </div>
-    </main>
-  </body>
+      <div class="anchor">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path
+            d="M10.1224 14.692L9.37914 15.4042C9.06445 15.7058 8.55557 15.7058 8.24423 15.4042L1.73602 9.17041C1.42133 8.86883 1.42133 8.38116 1.73602 8.08278L8.24423 1.84576C8.55892 1.54417 9.06779 1.54417 9.37914 1.84576L10.1224 2.55801C10.4404 2.8628 10.4337 3.3601 10.109 3.65847L6.07482 7.34166H15.6965C16.1418 7.34166 16.5 7.68495 16.5 8.11166V9.13833C16.5 9.56504 16.1418 9.90833 15.6965 9.90833H6.07482L10.109 13.5915C10.4371 13.8899 10.4438 14.3872 10.1224 14.692Z"
+            fill="#CDD5F6" />
+        </svg>
+      </div>
+      <div class="header active">COMPONENTS</div>
+      <ul>
+        <li><a href="/component-pages/accordion.html">Accordion</a></li>
+        <li>Button</li>
+        <li>Cards</li>
+        <li>Input</li>
+        <li>List Item</li>
+        <li>Modal</li>
+        <li>Nav</li>
+      </ul>
+    </nav>
+    <div class="container-fluid">
+      <header>
+        <div class="logo"><img src="/assets/wavicle-logo.svg" class="img-fluid" alt="wavicle-logo"></div>
+        <h4>
+        Welcome to the home of
+        <span class="highlight primary"><strong>Wave</strong></span>
+      </h4>
+      <h5>
+        Here you can explore and learn more about Wavicle's new Design
+        System.
+      </h5>
+      <h6 class="mt-5">
+        Each Component within
+        <span class="highlight primary"><strong>Wave</strong></span> plays a
+        vital part in the customer's product journey. Carefully designed and
+        built, every atom was created with the human in mind. As the building
+        blocks of Wavicle products, its important for every component to be
+        responsive, accessible and intuitive.
+        </br>        </br>
+
+        We're excited you're here and choosing to explore a new way of creating products at Wavicle, with <span
+          class="highlight primary"><strong>Wave</strong>!</span>
+      </h6>
+      </header>
+    </div>
+  </main>
+</body>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </html>
