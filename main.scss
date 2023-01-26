@@ -124,6 +124,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+  align-items: baseline;
 }
 
 .muted {
@@ -232,6 +233,7 @@ span {
 
 .home {
   height: 100vh;
+
   .asset {
     border-radius: 20px;
     position: relative;
@@ -245,6 +247,7 @@ span {
 header {
   transform: translateY(3em);
   padding: 4em !important;
+
   .logo {
     width: 100px;
     margin-bottom: 1em;
@@ -289,6 +292,14 @@ main {
   &.component-page {
     display: flex;
     justify-content: start;
+
+    section {
+      .doc-title {
+        text-transform: uppercase;
+        font-weight: var(--font-weight-normal);
+        font-size: var(--font-size-3);
+      }
+    }
   }
 }
 
@@ -305,6 +316,7 @@ main {
     header {
       padding: 1em;
       transform: translate(0);
+
       .cta {
         margin-top: 2em;
 

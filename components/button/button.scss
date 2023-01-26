@@ -4,6 +4,15 @@ button {
   border: 1px solid transparent;
   transition: all 0.4s ease;
 
+  &.btn {
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 0.25em;
+    }
+  }
+
   &:hover {
     cursor: pointer;
     border-color: var(--primary--600);
@@ -18,16 +27,18 @@ button {
 
 //sizes
 .btn-lg {
-  padding: 1em;
+  padding: 0.575em 1.3em;
   font-size: var(--font-size-6);
 }
 
 .btn-md {
-  padding: 0.675em;
+  padding: 0.375em 2em;
+  font-size: var(--font-size-5);
 }
 
 .btn-sm {
-  padding: 0.5em;
+  padding: 0.25em 1em;
+  font-size: var(--font-size-3);
 }
 
 //types
@@ -53,6 +64,7 @@ button {
     color: var(--white--50);
   }
   &:hover {
+    border-color: var(--secondary--600);
     background-color: var(--secondary--500);
   }
 }

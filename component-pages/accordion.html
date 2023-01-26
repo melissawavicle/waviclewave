@@ -1,262 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image" href="/assets/wavicle-logo.svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link rel="stylesheet" href="/normalize.css" />
     <link rel="stylesheet" href="/main.css" />
 
     <title>Wave | Components</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <main class="component-page">
-      <nav class="open default">
-        <div class="avatar mb-5">
-          <a href="/./index.html"
-            ><img src="../assets/wavicle-logo-white.svg"
-          /></a>
-        </div>
-        <div class="anchor">
-          <a href="/./components.html">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="none"
-            >
-              <path
-                d="M10.1224 14.692L9.37914 15.4042C9.06445 15.7058 8.55557 15.7058 8.24423 15.4042L1.73602 9.17041C1.42133 8.86883 1.42133 8.38116 1.73602 8.08278L8.24423 1.84576C8.55892 1.54417 9.06779 1.54417 9.37914 1.84576L10.1224 2.55801C10.4404 2.8628 10.4337 3.3601 10.109 3.65847L6.07482 7.34166H15.6965C16.1418 7.34166 16.5 7.68495 16.5 8.11166V9.13833C16.5 9.56504 16.1418 9.90833 15.6965 9.90833H6.07482L10.109 13.5915C10.4371 13.8899 10.4438 14.3872 10.1224 14.692Z"
-                fill="#CDD5F6"
-              />
-            </svg>
-          </a>
-        </div>
-        <div class="header"><a href="/components.html">COMPONENTS</a></div>
-        <ul>
-          <li class="selected">Accordion</li>
-          <li>Button</li>
-          <li>Cards</li>
-          <li>Input</li>
-          <li>List Item</li>
-          <li>Modal</li>
-          <li>Nav</li>
-        </ul>
-      </nav>
-      <div class="container-fluid">
-        <section class="mb-5">
-          <h3>Accordion</h3>
-          <h6>
-            The Accordion Component allows you to hide and show content at the
-            request of the user.</br> Panels are collapsible and can all be shown at
-            one time or be shown one at a time.
-          </h6>
-        </section>
+        <nav class="open default">
+            <div class="avatar mb-5">
+                <a href="/./index.html"><img src="../assets/wavicle-logo-white.svg" /></a>
+            </div>
+            <div class="anchor">
+                <a href="/./components.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path
+                            d="M10.1224 14.692L9.37914 15.4042C9.06445 15.7058 8.55557 15.7058 8.24423 15.4042L1.73602 9.17041C1.42133 8.86883 1.42133 8.38116 1.73602 8.08278L8.24423 1.84576C8.55892 1.54417 9.06779 1.54417 9.37914 1.84576L10.1224 2.55801C10.4404 2.8628 10.4337 3.3601 10.109 3.65847L6.07482 7.34166H15.6965C16.1418 7.34166 16.5 7.68495 16.5 8.11166V9.13833C16.5 9.56504 16.1418 9.90833 15.6965 9.90833H6.07482L10.109 13.5915C10.4371 13.8899 10.4438 14.3872 10.1224 14.692Z"
+                            fill="#CDD5F6" />
+                    </svg>
+                </a>
+            </div>
+            <div class="header"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18"
+                    fill="none">
+                    <path
+                        d="M14.3333 5.41667H13V2.75001C13 2.39638 12.8595 2.05724 12.6095 1.8072C12.3594 1.55715 12.0203 1.41667 11.6667 1.41667H5C4.64638 1.41667 4.30724 1.55715 4.05719 1.8072C3.80714 2.05724 3.66667 2.39638 3.66667 2.75001V4.08334H2.33333C1.97971 4.08334 1.64057 4.22381 1.39052 4.47386C1.14048 4.72391 1 5.06305 1 5.41667V8.08334C1 8.43696 1.14048 8.7761 1.39052 9.02615C1.64057 9.2762 1.97971 9.41667 2.33333 9.41667H3.66667V14.75C3.66667 15.1036 3.80714 15.4428 4.05719 15.6928C4.30724 15.9429 4.64638 16.0833 5 16.0833H11.6667C12.0203 16.0833 12.3594 15.9429 12.6095 15.6928C12.8595 15.4428 13 15.1036 13 14.75V13.4167H14.3333C14.687 13.4167 15.0261 13.2762 15.2761 13.0261C15.5262 12.7761 15.6667 12.437 15.6667 12.0833V6.75001C15.6667 6.39638 15.5262 6.05724 15.2761 5.8072C15.0261 5.55715 14.687 5.41667 14.3333 5.41667ZM11.6667 14.75H5V9.41667H6.33333C6.68696 9.41667 7.02609 9.2762 7.27614 9.02615C7.52619 8.7761 7.66667 8.43696 7.66667 8.08334V5.41667C7.66667 5.06305 7.52619 4.72391 7.27614 4.47386C7.02609 4.22381 6.68696 4.08334 6.33333 4.08334H5V2.75001H11.6667V5.41667H10.3333C9.97971 5.41667 9.64057 5.55715 9.39052 5.8072C9.14048 6.05724 9 6.39638 9 6.75001V12.0833C9 12.437 9.14048 12.7761 9.39052 13.0261C9.64057 13.2762 9.97971 13.4167 10.3333 13.4167H11.6667V14.75ZM14.3333 12.0833H10.3333V6.75001H14.3333V12.0833Z"
+                        fill="#CDD5F6" />
+                </svg><a href="/./components.html">COMPONENTS</a></div>
+            <ul>
+                <li class="selected">Accordion</li>
+                <li><a href="/component-pages/button.html">Button</a></li>
+                <li>Cards</li>
+                <li>Input</li>
+                <li>List Item</li>
+                <li>Modal</li>
+                <li>Nav</li>
+            </ul>
+        </nav>
+        <div class="container-fluid">
+            <section class="mb-5">
+                <h3>Accordion</h3>
+                <h6>
+                    The Accordion Component allows you to hide and show content at the
+                    request of the user.</br> Panels are collapsible and can all be shown at
+                    one time or be shown one at a time.
+                </h6>
+                <div class="label mt-3"><a target="_blank"
+                        href="https://getbootstrap.com/docs/5.3/components/accordion/">Bootstrap Component Reference</a>
+                </div>
+            </section>
 
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Accordion Item #1
-                <div class="end">
-                  <svg
-                    class="plus"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                  >
-                    <rect width="18" height="18" rx="9" fill="#F2F4FD" />
-                    <path
-                      d="M8.28571 14V9.71429H4V8.28571H8.28571V4H9.71429V8.28571H14V9.71429H9.71429V14H8.28571Z"
-                      fill="#4363DA"
-                    />
-                  </svg>
-                  <svg
-                    class="minus"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                  >
-                    <rect width="18" height="18" rx="9" fill="#F2F4FD" />
-                    <path
-                      d="M14 9.71428H4V8.28571H14V9.71428Z"
-                      fill="#4363DA"
-                    />
-                  </svg>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                            <div class="end">
+                                <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 18 18" fill="none">
+                                    <rect width="18" height="18" rx="9" fill="#F2F4FD" />
+                                    <path
+                                        d="M8.28571 14V9.71429H4V8.28571H8.28571V4H9.71429V8.28571H14V9.71429H9.71429V14H8.28571Z"
+                                        fill="#4363DA" />
+                                </svg>
+                                <svg class="minus" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 18 18" fill="none">
+                                    <rect width="18" height="18" rx="9" fill="#F2F4FD" />
+                                    <path d="M14 9.71428H4V8.28571H14V9.71428Z" fill="#4363DA" />
+                                </svg>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is
+                            shown by default, until the collapse plugin adds the appropriate
+                            classes that we use to style each element. These classes control
+                            the overall appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with custom CSS or
+                            overriding our default variables. It's also worth noting that
+                            just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit
+                            overflow.
+                        </div>
+
+
+                    </div>
                 </div>
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Accordion Item #2
-                <div class="end">
-                  <svg
-                    class="plus"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                  >
-                    <rect width="18" height="18" rx="9" fill="#F2F4FD" />
-                    <path
-                      d="M8.28571 14V9.71429H4V8.28571H8.28571V4H9.71429V8.28571H14V9.71429H9.71429V14H8.28571Z"
-                      fill="#4363DA"
-                    />
-                  </svg>
-                  <svg
-                    class="minus"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                  >
-                    <rect width="18" height="18" rx="9" fill="#F2F4FD" />
-                    <path
-                      d="M14 9.71428H4V8.28571H14V9.71428Z"
-                      fill="#4363DA"
-                    />
-                  </svg>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                            <div class="end">
+                                <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 18 18" fill="none">
+                                    <rect width="18" height="18" rx="9" fill="#F2F4FD" />
+                                    <path
+                                        d="M8.28571 14V9.71429H4V8.28571H8.28571V4H9.71429V8.28571H14V9.71429H9.71429V14H8.28571Z"
+                                        fill="#4363DA" />
+                                </svg>
+                                <svg class="minus" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 18 18" fill="none">
+                                    <rect width="18" height="18" rx="9" fill="#F2F4FD" />
+                                    <path d="M14 9.71428H4V8.28571H14V9.71428Z" fill="#4363DA" />
+                                </svg>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is
+                            hidden by default, until the collapse plugin adds the
+                            appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing
+                            and hiding via CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's also worth
+                            noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit
+                            overflow.
+                            </br></br> I am a panel with buttons:</br>
+                            <button class="btn btn-primary btn-lg" type="button">Hello</button>
+                            <button class="btn btn-secondary btn-md" type="button">Hello</button>
+                            <button class="btn btn-white btn-sm" type="button">Hello</button>
+                        </div>
+                    </div>
                 </div>
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Accordion Item #3
-                <div class="end">
-                  <svg
-                    class="plus"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                  >
-                    <rect width="18" height="18" rx="9" fill="#F2F4FD" />
-                    <path
-                      d="M8.28571 14V9.71429H4V8.28571H8.28571V4H9.71429V8.28571H14V9.71429H9.71429V14H8.28571Z"
-                      fill="#4363DA"
-                    />
-                  </svg>
-                  <svg
-                    class="minus"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                  >
-                    <rect width="18" height="18" rx="9" fill="#F2F4FD" />
-                    <path
-                      d="M14 9.71428H4V8.28571H14V9.71428Z"
-                      fill="#4363DA"
-                    />
-                  </svg>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                            <div class="end">
+                                <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 18 18" fill="none">
+                                    <rect width="18" height="18" rx="9" fill="#F2F4FD" />
+                                    <path
+                                        d="M8.28571 14V9.71429H4V8.28571H8.28571V4H9.71429V8.28571H14V9.71429H9.71429V14H8.28571Z"
+                                        fill="#4363DA" />
+                                </svg>
+                                <svg class="minus" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 18 18" fill="none">
+                                    <rect width="18" height="18" rx="9" fill="#F2F4FD" />
+                                    <path d="M14 9.71428H4V8.28571H14V9.71428Z" fill="#4363DA" />
+                                </svg>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is
+                            hidden by default, until the collapse plugin adds the
+                            appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing
+                            and hiding via CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's also worth
+                            noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit
+                            overflow.
+                        </div>
+                    </div>
                 </div>
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </main>
-  </body>
-  <script src="main.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-    crossorigin="anonymous"
-  ></script>
+</body>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
+</script>
+
 </html>

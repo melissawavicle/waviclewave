@@ -14,6 +14,7 @@ nav {
     background-color: var(--primary--600);
     ul {
       li {
+        padding-left: 2em;
         color: var(--white--100);
         a {
           color: var(--white--100);
@@ -24,6 +25,7 @@ nav {
 
   ul {
     li {
+      transition: all 0.4s ease;
       padding: 0.5em 1em;
       transition: all 0.4s ease;
       border-radius: 6px;
@@ -33,10 +35,12 @@ nav {
         margin-top: 0;
       }
       &:hover {
+        transform: translateX(1em);
         cursor: pointer;
         background-color: var(--transparent--05);
       }
       &.selected {
+        transform: translateX(1em);
         background-color: var(--transparent--20);
       }
     }
@@ -51,8 +55,16 @@ nav {
   }
 
   .header {
+    transition: all 0.4s ease;
     position: relative;
     margin: 1em 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: var(--primary--200);
+    &:hover {
+      transform: translateY(0.5em);
+    }
     &.active {
       &::after {
         content: "";
@@ -65,14 +77,20 @@ nav {
         background: white;
         top: 10px;
       }
+      &:hover {
+        transform: translateY(0em);
+      }
     }
     a {
       color: inherit;
     }
+    svg {
+      margin-right: 0.25em;
+    }
   }
   //styles for when the nav is open
   &.open {
-    width: 200px;
+    width: 260px;
   }
 }
 
