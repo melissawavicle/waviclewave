@@ -53,16 +53,21 @@ nav {
   .header {
     position: relative;
     margin: 1em 0;
-    &::after {
-      content: "";
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      border-radius: 99em;
-      display: block;
-      right: 0;
-      background: white;
-      top: 10px;
+    &.active {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 99em;
+        display: block;
+        right: 0;
+        background: white;
+        top: 10px;
+      }
+    }
+    a {
+      color: inherit;
     }
   }
   //styles for when the nav is open
