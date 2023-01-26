@@ -5,31 +5,44 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image" href="assets/wavicle-logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="main.css" />
 
     <title>Wave Design System</title>
   </head>
 
-  <body>
-    <main class="home">
-      <header class="home-header">
+  <body class="home">
+    <main class="row">
+      <header class="home-header col-sm-12 col-lg-12">
         <h1>
           A New <span class="highlight primary">Wave</span>of Data Visualization
         </h1>
         <h3>Get to know Wavicle's new Design System</h3>
-        <div class="flex">
+        <div class="flex cta">
           <button type="button" class="btn-primary btn-lg">
-            <a href="dashboards.html">Explore</a>
+            <a href="dashboards.html">View Dashboards</a>
           </button>
           <button type="button" class="btn-secondary btn-lg">
-            Read the Docs
+            <a href="components.html">View Components</a>
           </button>
+          <button type="button" class="btn-white btn-lg">Read the Docs</button>
         </div>
       </header>
+      <div class="graphics col-sm-12 col-lg-12">
+        <img
+          class="asset"
+          src="/assets/img/cover.jpg"
+          class="floating"
+          alt="graphic"
+        />
+      </div>
     </main>
-
-    <img src="./assets/Cover.png" tabindex="1" class="cover" alt="cover" />
   </body>
   <script src="main.js"></script>
 </html>

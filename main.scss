@@ -31,12 +31,6 @@ body {
   font-size: 1.6rem;
   overflow-x: hidden;
 }
-main {
-  height: 100%;
-  &.home {
-    height: auto;
-  }
-}
 
 // resets for bootstrap
 
@@ -69,7 +63,6 @@ svg {
 * {
   margin: 0;
   padding: 0;
-  color: var(--black--600);
 }
 
 //remove default styling from H tags
@@ -221,11 +214,47 @@ span {
   margin: auto 0.2em auto 0;
 }
 
+//chart style overrides
+
+.chart {
+  canvas {
+    height: auto !important;
+  }
+}
+
+.half {
+  width: 50% !important;
+}
+
 //index styles for DS
+
+.home {
+  height: 100vh;
+  .asset {
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-16em);
+    // box-shadow: -1px 20px 20px 0px rgb(0 0 0 / 10%);
+  }
+}
+
 header {
-  padding: 2em 0;
+  transform: translateY(3em);
+  padding: 4em !important;
+
+  h1 {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-9);
+  }
+
+  h2 {
+    font-size: var(--font-size-6);
+  }
+
   h3 {
-    font-size: var(--font-size-8);
+    font-size: var(--font-size-7);
     margin-bottom: 0.5em;
   }
 }
@@ -247,37 +276,11 @@ header {
   border-radius: 10px;
   transition: all 0.4s ease;
   box-shadow: 2px 20px 20px 0px rgba(0, 0, 0, 0.1);
+
   &:hover {
     cursor: pointer;
     box-shadow: none;
   }
-}
-
-header {
-  h1 {
-    font-weight: var(--font-weight-normal);
-  }
-  h2 {
-    font-size: var(--font-size-6);
-  }
-  &.home-header {
-    padding: 2em;
-    transform: translateY(6em);
-    h1 {
-      font-size: var(--font-size-10);
-    }
-  }
-}
-
-//chart style overrides
-
-.chart {
-  canvas {
-    height: auto !important;
-  }
-}
-.half {
-  width: 50% !important;
 }
 
 // mobile queries
@@ -285,5 +288,36 @@ header {
 @media screen and (max-width: 1024px) {
   .mobile-100 {
     width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 988px) {
+  .home {
+    header {
+      padding: 1em;
+      transform: translate(0);
+
+      h1 {
+        font-size: var(--font-size-10);
+      }
+
+      h3 {
+        font-size: var(--font-size-9);
+      }
+
+      .cta {
+        margin-top: 2em;
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+
+    .asset {
+      position: relative;
+      width: 100%;
+      transform: translateY(0);
+    }
   }
 }

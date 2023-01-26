@@ -35,20 +35,39 @@ button {
   background-color: var(--primary--600);
   border-color: var(--primary--600);
   color: var(--white--50);
-  a {
+  a,
+  a:hover {
     color: var(--white--50);
+  }
+  &:hover {
+    background-color: var(--primary--500);
   }
 }
 
 .btn-secondary {
-  border-color: var(--primary--600);
-  background-color: var(--white--50);
-  color: var(--primary--600);
+  border-color: var(--secondary--600);
+  background-color: var(--secondary--600);
+  color: var(--white--50);
+  a,
+  a:hover {
+    color: var(--white--50);
+  }
+  &:hover {
+    background-color: var(--secondary--500);
+  }
 }
 
 .btn-white {
   background-color: var(--white--50);
   border-color: var(--black--200);
+  a,
+  a:hover {
+    color: var(--white--50);
+  }
+  &:hover {
+    background-color: var(--white--100);
+    border-color: var(--black--300);
+  }
 }
 
 // btn group

@@ -7,11 +7,15 @@
     justify-content: end;
     display: flex;
     margin: 0 1em;
-    align-items: end;
+    align-items: center;
+    gap: 1em;
   }
 }
 
 .text-input {
+  margin-bottom: 2em;
+  width: 50vw;
+  margin: 0 auto 2em;
   position: relative;
   display: flex;
   align-items: baseline;
